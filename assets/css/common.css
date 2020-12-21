@@ -1,0 +1,72 @@
+/* color scheme */
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --accent-orange: #FA4A0C;
+    --accent-dark-blue: #252B42;
+    --average-white: #F6F6F6;
+    --average-dark-white: #E4E4E4;
+    --average-light-grey: #BDBDBD;
+    --average-grey: #737373;
+    --average-dark-grey: #5C5C5C;
+}
+
+/* some common styles */
+
+body {
+    letter-spacing: 0.2px;
+    min-width: 305px;
+    overflow-x: hidden;
+}
+
+#wrapper {
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo-wrapper {
+    max-width: 104px;
+}
+
+.logo-link {
+    display: block;
+}
+
+.logo {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.image-wrapper .image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+#wrapper .desktop-only {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    #wrapper .mobile-only {
+        display: none;
+    }
+
+    #wrapper .desktop-only {
+        display: inline-block;
+    }
+
+    .logo-wrapper {
+        max-width: 206px;
+        height: 102px;
+    }
+}
