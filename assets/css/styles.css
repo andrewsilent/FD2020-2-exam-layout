@@ -1,3 +1,6 @@
 @import "./reset.css";
 @import "./fonts.css";
 @import "./common.css";
+@import "./header-section/header-section.css";
+@import "./landing-section/landing-section.css";
+@import "./app-description-section/app-description-section.css";
