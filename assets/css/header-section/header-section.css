@@ -1,0 +1,53 @@
+.header-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.0625rem;
+    padding-bottom: 1.0625rem;
+}
+
+.header-section .logo-wrapper {
+    max-width: 104px;
+}
+
+.header-section .burger-wrapper {
+    padding: 0.4375rem 0;
+    font-size: 0;
+    line-height: 0;
+    cursor: pointer;
+}
+
+.header-section .burger,
+.header-section .burger::before,
+.header-section .burger::after {
+    display: inline-block;
+    height: 0.125rem;
+    width: 1.25rem;
+    border-radius: 0.125rem;
+    background-color: var(--average-grey);
+}
+
+.header-section .burger {
+    position: relative;
+}
+
+.header-section .burger::before,
+.header-section .burger::after {
+    content: '';
+    position: absolute;
+}
+
+.header-section .burger::before {
+    top: -0.375rem;
+}
+
+.header-section .burger::after {
+    bottom: -0.375rem;
+}
+
+@media screen and (min-width: 768px) {
+    .header-section .logo-wrapper {
+        max-width: 206px;
+        height: 102px;
+    }
+}
